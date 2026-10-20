@@ -1,0 +1,55 @@
+# Publishes original-source/dist to GitHub Pages.
+#
+# The original files use root-relative paths (/styles.css, /assets/...), which
+# break under a project-site URL like https://<user>.github.io/R-K-Muffler/.
+# The build step rewrites them to relative paths in the published copy only;
+# the files in original-source/ stay byte-identical to the export.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Prepare site
+        run: |
+          mkdir _site
+          cp -R original-source/dist/. _site/
+          sed -i -E 's#(href|src)="/(assets/|styles\.css|app\.js)#\1="\2#g' _site/index.html
+          sed -i -E "s#url\('/assets/#url('assets/#g" _site/styles.css
+          sed -i -E 's#url\(/assets/#url(#g' _site/assets/fonts.css
+          if grep -nE '(href|src)="/[^/]|url\(['"'"'"]?/[^/]' _site/index.html _site/styles.css _site/assets/fonts.css; then
+            echo "Root-relative paths remain after rewrite" >&2
+            exit 1
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
