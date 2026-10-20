@@ -1,0 +1,95 @@
+{
+  "exported_at": "2026-10-13",
+  "project": "R & K Muffler",
+  "project_id": "appgprj_6acd2f6faad48191808dc1941e4f113c",
+  "published_version": 3,
+  "source_commit": "10fded9aa0a763bc0417d3bc5621245d3fa638ad",
+  "current_live_url": "https://rkmuffler.jkalka28227.chatgpt.site",
+  "original_files": [
+    {
+      "path": "original-source/.openai/hosting.json",
+      "bytes": 106,
+      "sha256": "1a0bd3eb5b202979d19cfab7653266e1be13d764542fa961325a82e76cd61aee"
+    },
+    {
+      "path": "original-source/README.md",
+      "bytes": 3817,
+      "sha256": "1040e11d77ec3b0259b7d304c4c9c2ef0c5e8fc0ad6edf2ebe20321829516f80"
+    },
+    {
+      "path": "original-source/dist/app.js",
+      "bytes": 5444,
+      "sha256": "77e026b03a42773894b6da555bf471b1204ebb869adcaf1b9cb04962ac107cb5"
+    },
+    {
+      "path": "original-source/dist/assets/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2_3E.ttf",
+      "bytes": 87120,
+      "sha256": "7dde307fa887fc65ff5830cfada77a7decc5dae8d3c816c9d39ba3f1af1c4ed7"
+    },
+    {
+      "path": "original-source/dist/assets/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1_3E.ttf",
+      "bytes": 87556,
+      "sha256": "73bc9e17231e9073780d3c81574c7253cecd5645c93544df1a935054b39a364f"
+    },
+    {
+      "path": "original-source/dist/assets/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873_3E.ttf",
+      "bytes": 86636,
+      "sha256": "0d85af813fc3ed87db0c6265515689b2eef5cbaf7aab17922528dfc95a2cd73f"
+    },
+    {
+      "path": "original-source/dist/assets/favicon.svg",
+      "bytes": 269,
+      "sha256": "885017af135e8ad383420170f921c2c02603a14f9df1ca69f8a066f7aece7acc"
+    },
+    {
+      "path": "original-source/dist/assets/fonts.css",
+      "bytes": 1512,
+      "sha256": "648b532aacc8be7bcc7625ab681001bd4ae0b98c922e4dacc03064c41133cdbb"
+    },
+    {
+      "path": "original-source/dist/assets/hero.jpg",
+      "bytes": 382741,
+      "sha256": "c6ddc58b203856cbc090c0606f6810245a75a12482e49c1cc92290b4d32cea62"
+    },
+    {
+      "path": "original-source/dist/assets/workshop.jpg",
+      "bytes": 128926,
+      "sha256": "45c0f49f9710bd729265df4000e7e4edbef8dd238427c1b1e0d839311d4e3858"
+    },
+    {
+      "path": "original-source/dist/assets/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf",
+      "bytes": 94928,
+      "sha256": "b9584e099e0e7f1e1e914c3037aabb9010c50346a3ce8df5eeeeecc0563044d8"
+    },
+    {
+      "path": "original-source/dist/assets/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4jE-_F.ttf",
+      "bytes": 95096,
+      "sha256": "6bad1a774228464cc88b8b0271555b266f7a3c64a7bedf15e165fdab4f6ac0ce"
+    },
+    {
+      "path": "original-source/dist/assets/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf",
+      "bytes": 95688,
+      "sha256": "b8f802f05b322a7345805f5b89f8bb976604cc719a91530918d5ce3c47160950"
+    },
+    {
+      "path": "original-source/dist/assets/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf",
+      "bytes": 94972,
+      "sha256": "a13d9b41b0a471ce58f0e46d377fa3cc76615e4632c3b15eb397caadf7a13f0a"
+    },
+    {
+      "path": "original-source/dist/assets/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk7PFO_F.ttf",
+      "bytes": 95060,
+      "sha256": "f433e5d333be1128d8ec8a28b8aadd0314d10e14e4105406076666bc830fc15d"
+    },
+    {
+      "path": "original-source/dist/index.html",
+      "bytes": 20801,
+      "sha256": "0a51d52bf398d2f0020d2a3c6b2dc1e503c7c96c3e5414e271bbb8fb779eaeff"
+    },
+    {
+      "path": "original-source/dist/styles.css",
+      "bytes": 22179,
+      "sha256": "480dcca851737d2f318087ba1e624df09c62c8e06ad34e4c53c612e925fb0dd8"
+    }
+  ]
+}

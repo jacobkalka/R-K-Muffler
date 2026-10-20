@@ -1,0 +1,13 @@
+# NEW migration template; not original ChatGPT Sites infrastructure.
+# Replace domain/root and configure HTTPS separately before public launch.
+server {
+    listen 80;
+    server_name YOUR-DOMAIN.example;
+    root /var/www/rk-muffler/dist;
+    index index.html;
+    charset utf-8;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}

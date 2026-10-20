@@ -1,0 +1,12 @@
+{
+  "_note": "New provider-neutral migration template; enter equivalent settings in your chosen host.",
+  "project_directory": "original-source",
+  "site_type": "static",
+  "install_command": null,
+  "build_command": null,
+  "publish_directory": "dist",
+  "environment_variables": {},
+  "public_access": true,
+  "https_required": true,
+  "site_origin": "https://YOUR-DOMAIN.example"
+}
